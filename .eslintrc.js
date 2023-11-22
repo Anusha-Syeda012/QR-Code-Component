@@ -9,14 +9,14 @@ module.exports = {
     'overrides': [
         {
             'env': {
-                'node': true
+                'node': false
             },
             'files': [
                 '*.html',
                 '.eslintrc.{js,cjs}'
             ],
             'parserOptions': {
-                'sourceType': 'script'
+                'sourceType': 'module'
             },
             'parser': '@html-eslint/parser',
         }
@@ -35,7 +35,7 @@ module.exports = {
         ],
         'quotes': [
             'error',
-            'single'
+            'double'
         ],
         'semi': [
             'error',
