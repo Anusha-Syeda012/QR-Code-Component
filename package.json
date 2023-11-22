@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.20.0",
+    "@html-eslint/parser": "^0.20.0",
     "eslint": "^8.54.0"
   }
 }
