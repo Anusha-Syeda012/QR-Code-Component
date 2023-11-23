@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">    
+    
+    <!-- External Css -->
+    <link rel="stylesheet" href="./design.css">
+
+    <!-- For Heading Font-Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./design.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
     <!-- For paragraph purposes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>QR-CODE-COMPONENT</title>
 </head>
-<body class="body-design flex-container">
-    <div class="card">
-    <div class="image-container" >
-        <img src="/images/image-qr-code.png" alt="qr-code" style="width: 270px; height:266px; border-radius: 10px ;">
-    </div>
-    <section>
-        <div class="text-container-title text-container" style="text-align: left; margin-left: 45px; margin-top: -15px ;">
-            <h3>Improve your front-end <br> skills by building projects</h3>
-            <div class="para">
-                <p style="font-size: 15px; color: hsl(220, 15%, 55%); margin-left: -20px;"> 
-                    Scan the QR code to visit Frontend <br>
-                    Mentor and take your coding skills to <br> the next level
+<body>
+    <div class="container col-1">
+        <div class="card-parent">
+            <div class="card-child">
+                <img src="/images/image-qr-code.png" alt="qr-code">
+                <section class="grid-row-span-2">
+                    <h3>Improve your front-end <br> skills by building projects</h3>
+                </section>
+                <section class="grid-row-span-2">
+                    <p>
+                        Scan the QR code to visit Frontend <br>
+                        Mentor and take your coding skills to <br> the next level
                     </p
+                    </p>
+                </section>
             </div>
         </div>
-</section>
-        
+    </div>
+</div>
 </body>
 </html>

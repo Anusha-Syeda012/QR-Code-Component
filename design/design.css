@@ -1,45 +1,158 @@
-.body-design{
-    background-color:  hsl(212, 45%, 89%);
-    width: 1440px;
-    position: absolute;
+/* For mobile phones: */
+@media only screen and (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        background-color:  hsl(212, 45%, 89%);
+        width: 350px;
+        height: 692px;
+        position: absolute;
+        flex-wrap: wrap;
     
-}
-.flex-container {
-    display: flex;
-    flex-direction:column-reverse;
-    margin-top: 50px;
     }
-.card{
-    box-sizing: border-box;
-    width: 294px;
-    height: 452px;
-    border-radius: 10px;
+    .card-parent{
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        border-style:none;
+        box-shadow: 0 3px 10px hsl(220, 15%, 55%);
+        width:294px ;
+        height:462px;
+        position:relative;
+        margin-top: 50px;
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        background-color: hsl(0, 0%, 100%);
+        
+    }
+    .card-child > img{
+        width: 270px;
+        height: 256px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    .card-child > section >h3{
+        font-family: 'Outfit', sans-serif;
+        text-decoration: none !important;
+        margin-left: 25px;
+    }
     
-    background-color:  hsl(0, 0%, 100%);
-    margin: auto;
-    padding: auto;    
-
-}
-.image-container{
-    display: inline-flex;
-    width: 264px;
-    height: 266px;
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    .grid-row-span-2{
+        grid-row: 1 /span 2;
+    }
+    
+    p{
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color:  hsl(220, 15%, 55%);
+    }
 }
 
-.text-container{
-    width: 264px;
-    height: 138px;
+/* For Desktop: */
+@media only screen and (max-width: 1440px){
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        background-color:  hsl(212, 45%, 89%);
+        width: 350px;
+        height: 692px;
+        position: absolute;
+        flex-wrap: wrap;
+    
+    }
+    .card-parent{
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        border-style:none;
+        box-shadow: 0 3px 10px hsl(220, 15%, 55%);
+        width:294px ;
+        height:462px;
+        position:relative;
+        margin-top: 50px;
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        background-color: hsl(0, 0%, 100%);
+        
+    }
+    .card-child > img{
+        width: 270px;
+        height: 256px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    .card-child > section >h3{
+        font-family: 'Outfit', sans-serif;
+        text-decoration: none !important;
+        margin-left: 25px;
+    }
+    
+    .grid-row-span-2{
+        grid-row: 1 /span 2;
+    }
+    
+    p{
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color:  hsl(220, 15%, 55%);
+    }
 }
 
-.text-container-title{
-    font-family: 'Outfit', sans-serif;
-    text-decoration: none !important;
-}
-
-.para{
-    font-family: 'Outfit', sans-serif;
+/* for Laptop screen sizes */
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        background-color:  hsl(212, 45%, 89%);
+        width: 1350px;
+        height: 592px;
+        position: absolute;
+        flex-wrap: wrap;
+    
+    }
+    .card-parent{
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        border-style:none;
+        box-shadow: 0 3px 10px hsl(220, 15%, 55%);
+        width:294px ;
+        height:462px;
+        position:relative;
+        margin-top: 50px;
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        background-color: hsl(0, 0%, 100%);
+        
+    }
+    .card-child > img{
+        width: 270px;
+        height: 256px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    .card-child > section >h3{
+        font-family: 'Outfit', sans-serif;
+        text-decoration: none !important;
+        margin-left: 25px;
+    }
+    
+    .grid-row-span-2{
+        grid-row: 1 /span 2;
+    }
+    
+    p{
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        color:  hsl(220, 15%, 55%);
+    }
 }
