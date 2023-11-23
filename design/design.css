@@ -26,6 +26,8 @@
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         background-color: hsl(0, 0%, 100%);
+        z-index:auto;
+
         
     }
     .card-child > img{
@@ -63,6 +65,7 @@
         height: 97%;
         position: absolute;
         flex-wrap: wrap;
+
     
     }
     .card-parent{
@@ -73,6 +76,7 @@
         width:294px ;
         height:462px;
         position:relative;
+        z-index: 8000;
         margin-top: 50px;
         display: grid;
         gap: 1rem;
